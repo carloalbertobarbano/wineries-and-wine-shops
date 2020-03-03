@@ -1,0 +1,53 @@
+Item -> (amount: positivInteger, contains: Wine) (inferred Bottle, Collection)
+Price -> (price: float, hasMeasurementUnit: MeasurementUnit)
+Wine -> (proprietà vino i.e. hasColor, etc.)
+Grape
+
+
+Object
+
+
+IN ONTOLOGIA UNIONE:
+- mettere winery sell some wine
+- property chain sellsWineOfColor: sell o hasColor; e per tutte le altre obj. prop.
+
+
+----------------------------------
+
+Ontologia Progetto
+
+Bastianich :  + object Property sui Vini
+
+Astemia.: inserire qualche istanza
+
+3* ontologia : Solo vino bianco / dolce 
+
+Assunzione : Bottle 0,75
+
+PropertyChain:
+ - sell o hasCalor -> sellWineOfColorRed
+  -> growIn
+
+
+Documentazione
+
+ - Definire winery dentro l’ontologia final
+ 
+ 
+Query:
+ - Quale ontologia vende il vino X?
+ - Quanti vini diversi vende l’ontologia X?
+ - Come è il vino x? (Gusto, Colore, Body) ?
+ 
+
+ - Ottimizzazione acquisiti 
+
+Query 1 : Recuperare immagini in base al parametro di ricerca
+
+
+Dove x è una variabile passata 
+
+------
+Domande ; bastianich:
+ - I vini di tipo non bastianich sono definiti solo nella classe generica, portare una classe più specifica?
+

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Wineries and Wine Shop</title>
+        <link rel="stylesheet" href="res/bootstrap.min.css">
+        <link rel="stylesheet" href="app.css">
+    </head>
+
+    <body ng-app="WineApp">
+        <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="b2b.html">B2B</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="b2c.html">B2C</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="wine-shops.html">Enoteche</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="wineries.html">Aziene Vinicole</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="wines.html">Vini</a>
+              </li>
+            </ul>
+          </nav>
+
+        <div class="jumbotron d-flex text-center">
+            <div class="row align-self-center text-center mx-auto">
+                <h1>Wineries and Wine Shops</h1>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="card-deck">
+                <div class="card">
+                    <img class="card-img-top" src="res/assets/wineshop.jpg">
+                    <div class="card-body">
+                        <h5 class="card-title">Enoteche</h5>
+                        <p class="card-text">Vedi la lista di enoteche disponibili</p>
+                        <a href="wine-shops.html" class="btn btn-primary">Vai</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="res/assets/winery.jpg">
+                    <div class="card-body">
+                        <h5 class="card-title">Aziende Vinicole</h5>
+                        <p class="card-text">Trova i produttori migliori</p>
+                        <a href="wineries.html" class="btn btn-primary">Vai</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="res/assets/wines.jpg">
+                    <div class="card-body">
+                        <h5 class="card-title">Vini</h5>
+                        <p class="card-text">Consulta il catalogo dei vini</p>
+                        <a href="wines.html" class="btn btn-primary">Vai</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <span class="text-muted">
+                    All Rights Reserved © 2019-2020 - DipInfo
+                </span>
+            </div>
+        </footer>
+        <script src="res/angular.min.js"></script>
+        <script src="res/jquery.min.js"></script>
+        <script src="res/bootstrap.min.js"></script>        
+        <script src="app.js"></script>
+    </body>
+</html>

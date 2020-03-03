@@ -1,0 +1,465 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor">
+    <Prefix name="" IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor"/>
+    <Prefix name="MU" IRI="https://w3id.org/italia/onto/MU/"/>
+    <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
+    <Prefix name="DUL" IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="vann" IRI="http://purl.org/vocab/vann/"/>
+    <Prefix name="wine" IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#"/>
+    <Prefix name="terms" IRI="http://purl.org/dc/terms/"/>
+    <Prefix name="collectionentity" IRI="http://www.ontologydesignpatterns.org/cp/owl/collectionentity.owl#"/>
+    <Prefix name="cpannotationschema" IRI="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <Literal xml:lang="en">Francesco Iodice
+Carlo Alberto Barbano Maria</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:date"/>
+        <Literal xml:lang="en">18/02/2020</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <Literal xml:lang="en">In this ontology are represented the fundamental concepts for the sale of wines such as price, quantity, unit of measure.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <Literal xml:lang="en">Ontology to manage the whoseale sell of wine</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
+        <Literal>TODO</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
+        <Literal>http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <Literal xml:lang="en">Wine Distributor</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/bag.owl#Item"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="collectionentity:Collection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BigContainer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bottle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Distributor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Price"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SmallContainer"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="wine:Wine"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="MU:MeasurementUnit"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#containedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#contains"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPrice"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#sell"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#soldBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="MU:hasMeasurementUnit"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#amount"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#price"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BottleUnit"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Liter"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:date"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="rdf:type"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="collectionentity:Collection"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#amount"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:positiveInteger"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">2</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#BigContainer"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#amount"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:positiveInteger"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">12</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Bottle"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#amount"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:positiveInteger"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">0</Literal>
+                </FacetRestriction>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">1</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Distributor"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#sell"/>
+            <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/bag.owl#Item"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SmallContainer"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#amount"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:positiveInteger"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">2</Literal>
+                </FacetRestriction>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">11</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class abbreviatedIRI="collectionentity:Collection"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/bag.owl#Item"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BigContainer"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/bag.owl#Item"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bottle"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/bag.owl#Item"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SmallContainer"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/bag.owl#Item"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class abbreviatedIRI="MU:MeasurementUnit"/>
+        <NamedIndividual IRI="#BottleUnit"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="MU:MeasurementUnit"/>
+        <NamedIndividual IRI="#Liter"/>
+    </ClassAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#containedIn"/>
+        <ObjectProperty IRI="#contains"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#sell"/>
+        <ObjectProperty IRI="#soldBy"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#contains"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="MU:hasMeasurementUnit"/>
+    </FunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#containedIn"/>
+        <Class abbreviatedIRI="wine:Wine"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#contains"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/bag.owl#Item"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPrice"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#sell"/>
+        <Class IRI="#Distributor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#soldBy"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/bag.owl#Item"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="MU:hasMeasurementUnit"/>
+        <Class IRI="#Price"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#containedIn"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/bag.owl#Item"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#contains"/>
+        <Class abbreviatedIRI="wine:Wine"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPrice"/>
+        <Class IRI="#Price"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#sell"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/bag.owl#Item"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#soldBy"/>
+        <Class IRI="#Distributor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="MU:hasMeasurementUnit"/>
+        <Class abbreviatedIRI="MU:MeasurementUnit"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#amount"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/bag.owl#Item"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#price"/>
+        <Class IRI="#Price"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#amount"/>
+        <Datatype abbreviatedIRI="xsd:positiveInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#price"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.ontologydesignpatterns.org/cp/owl/bag.owl#Item</IRI>
+        <Literal xml:lang="en">An individual article or unit, especially one that is part of a list, collection, or set.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.ontologydesignpatterns.org/cp/owl/bag.owl#Item</IRI>
+        <Literal xml:lang="en">Item</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>collectionentity:Collection</AbbreviatedIRI>
+        <Literal xml:lang="en">A collection of objects of a particular category</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>collectionentity:Collection</AbbreviatedIRI>
+        <Literal xml:lang="en">Collection</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BigContainer</IRI>
+        <Literal xml:lang="en">A container is any receptacle or enclosure for holding a product used in storage, packaging, and shipping. This term represents a conteiner that has at least 12 items</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BigContainer</IRI>
+        <Literal xml:lang="en">BigContainer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Bottle</IRI>
+        <Literal xml:lang="en">A bottle is a container of variable capacity, certified on the order of size of the liter, with a neck narrower than the arm, sometimes equipped with a cap.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Bottle</IRI>
+        <Literal xml:lang="en">Bottle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Distributor</IRI>
+        <Literal xml:lang="en">An agent who supplies goods to retailers. In this domain this terms mean a winery (Cantina)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Distributor</IRI>
+        <Literal xml:lang="en">Distributor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Price</IRI>
+        <Literal xml:lang="en">Number that quantitatively indicates a price per quantity measure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Price</IRI>
+        <Literal xml:lang="en">Price</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SmallContainer</IRI>
+        <Literal xml:lang="en">A container is any receptacle or enclosure for holding a product used in storage, packaging, and shipping. This term represents a conteiner that has at max 11 items</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SmallContainer</IRI>
+        <Literal xml:lang="en">SmallContainer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#amount</IRI>
+        <Literal xml:lang="en">amount</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdf:type"/>
+        <IRI>#containedIn</IRI>
+        <Literal xml:lang="en">conteinedIn</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#containedIn</IRI>
+        <Literal xml:lang="en">Wine -&gt; Item
+Concept that associates the wine entity with the property of being contained in an object</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#contains</IRI>
+        <Literal xml:lang="en">Item -&gt; Wine
+Concept that associates the Item entity with the property of contained in an object</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#contains</IRI>
+        <Literal xml:lang="en">contains</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdf:type"/>
+        <IRI>#hasPrice</IRI>
+        <Literal xml:lang="en">has Price</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasPrice</IRI>
+        <Literal xml:lang="en">Item -&gt; Pirce
+Concept that associates the item entity with the property to have a price</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#price</IRI>
+        <Literal xml:lang="en">price</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#sell</IRI>
+        <Literal xml:lang="en">Distributor -&gt; Item
+Concept that associates the Distribuot entity with the property to sell an item</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#sell</IRI>
+        <Literal xml:lang="en">sell</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#soldBy</IRI>
+        <Literal xml:lang="en">Item -&gt; Distributor
+Concept that associates the Item entity with the property of 
+be sold by a Distributor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#soldBy</IRI>
+        <Literal xml:lang="en">sold By</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wine:Wine</AbbreviatedIRI>
+        <Literal xml:lang="en">Wine is an alcoholic drink, obtained by fermenting the fruit of the vine, grapes, or must.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>wine:Wine</AbbreviatedIRI>
+        <Literal xml:lang="en">http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Wine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>MU:MeasurementUnit</AbbreviatedIRI>
+        <Literal xml:lang="en">The unit of measurement is a predetermined quantity of a specific physical quantity to which, as mentioned, the unit value is conventionally attributed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>MU:MeasurementUnit</AbbreviatedIRI>
+        <Literal xml:lang="en">MeasurementUnit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdf:type"/>
+        <AbbreviatedIRI>MU:hasMeasurementUnit</AbbreviatedIRI>
+        <Literal xml:lang="en">has Measurement Unit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>MU:hasMeasurementUnit</AbbreviatedIRI>
+        <Literal xml:lang="en">Pirice -&gt; Measurement Unit
+Concept that associates the Price entity (value Number) with the property of have a specific unit of measure</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

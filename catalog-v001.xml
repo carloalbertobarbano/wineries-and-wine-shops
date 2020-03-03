@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/carlo/ontologies/2020/2/wineries-unified" uri="wineries-unified.owl"/>
+    <uri id="Imports Wizard Entry" name="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine" uri="wine.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1583174196869" name="http://www.semanticweb.org/carlo/ontologies/2020/1/wineries" uri="wineries.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1583174196869" name="http://www.semanticweb.org/carlo/ontologies/2020/2/wineries-and-wine-shops" uri="wineries-and-wine-shops.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1583174196869" name="http://www.semanticweb.org/carlo/ontologies/2020/2/wineries-unified" uri="wineries-unified.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1583174196869" name="http://www.semanticweb.org/carlo/ontologies/2020/2/winery-astemia" uri="wineries-ontology/winery-astemia.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1583174196869" name="http://www.semanticweb.org/carlo/ontologies/2020/2/winery-bastianich" uri="wineries-ontology/winery-bastianich.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1583174196869" name="http://www.semanticweb.org/carlo/ontologies/2020/2/winery-bolla" uri="wineries-ontology/winery-bolla.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1583174196869" name="http://www.semanticweb.org/carloalberto/ontologies/2020/1/winery-bastianich" uri="wineries-ontology/old-winery-bastianich.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1583174196869" name="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor" uri="wine-core-distributor.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1583174196869" name="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winery-astemia" uri="wineries-ontology/old-winery-astemia.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1583174196869" name="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winery-bolla" uri="wineries-ontology/old-winery-bolla.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1583174196869" name="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food" uri="food.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1583174196869" name="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine" uri="wine.owl"/>
+    </group>
+</catalog>

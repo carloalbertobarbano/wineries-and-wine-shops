@@ -1,0 +1,702 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/carloalberto/ontologies/2020/1/winery-bastianich"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/carloalberto/ontologies/2020/1/winery-bastianich">
+    <Prefix name="" IRI="http://www.semanticweb.org/carloalberto/ontologies/2020/1/winery-bastianich"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="wine" IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#"/>
+    <Import>http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor</Import>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <Literal xml:lang="en">Francesco Iodice
+Carlo Alberto Barbano</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/date"/>
+        <Literal xml:lang="en">20/02/2020</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
+        <Literal xml:lang="en">Winery of Bastianich</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+        <Literal xml:lang="en">http://www.semanticweb.org/carloalberto/ontologies/2020/1/winery-bastianich</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <Literal xml:lang="en">Wine Bastianich Ontology</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#Price"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#ConsumableThing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Grape"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="wine:Chardonnay"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="wine:ItalianWine"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="wine:Merlot"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="wine:PinotNoir"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="wine:Region"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="wine:Wine"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="wine:WineBody"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="wine:WineColor"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="wine:WineDescriptor"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="wine:WineFlavor"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="wine:WineGrape"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="wine:WineSugar"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="wine:WineTaste"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="wine:Winery"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/carloalberto/ontologies/2020/1/wineries#originatedFrom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#contains"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#hasPrice"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#sell"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#madeFromFruit"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="wine:adjacentRegion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="wine:grownIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="wine:hasBody"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="wine:hasColor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="wine:hasFlavor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="wine:hasMaker"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="wine:hasSugar"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="wine:hasVintageYear"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="wine:hasWineDescriptor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="wine:locatedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="wine:madeFromGrape"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="wine:madeIntoWine"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/italia/onto/MU/hasMeasurementUnit"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#amount"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#price"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="wine:yearValue"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BastianichPremiumRed"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BastianichWinery"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BottleOfBastianichPremiumRed"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BoxOfBastianichPremiumRed"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BoxOfGaryFarrelMerlot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BoxOfLaneTennerPinotNoir"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BoxOfLongridgeMerlot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FriuliVeneziaGiulia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PirceOfLongridgeMerlotBox_Winery"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PriceOfBastianichPremiumRedBox_Winery"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PriceOfBastianichPremiumRed_Winery"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PriceOfGaryFarrelMerlotBox_Winery"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PriceOfLaneTannerPinotNoirBox_Winery"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PriceOfMerlotBox_Winery"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UvaDiTroiaGrape"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#BottleUnit"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#Liter"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Red"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="wine:ChardonnayGrape"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="wine:Delicate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="wine:Dry"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="wine:EdnaValleyRegion"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="wine:Full"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="wine:GaryFarrell"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="wine:GaryFarrellMerlot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="wine:LaneTanner"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="wine:LaneTannerPinotNoir"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="wine:Light"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="wine:Longridge"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="wine:LongridgeMerlot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="wine:Medium"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="wine:Moderate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="wine:MountEdenVineyard"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="wine:MountEdenVineyardEstatePinotNoir"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="wine:Mountadam"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="wine:MountadamChardonnay"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="wine:MountadamPinotNoir"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="wine:NewZealandRegion"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="wine:OffDry"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="wine:Red"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="wine:Rose"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="wine:SantaBarbaraRegion"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="wine:SonomaRegion"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="wine:SouthAustraliaRegion"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="wine:Strong"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="wine:Sweet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="wine:White"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/date"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="wine:WineBody"/>
+        <ObjectOneOf>
+            <NamedIndividual abbreviatedIRI="wine:Full"/>
+            <NamedIndividual abbreviatedIRI="wine:Light"/>
+            <NamedIndividual abbreviatedIRI="wine:Medium"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="wine:WineColor"/>
+        <ObjectOneOf>
+            <NamedIndividual abbreviatedIRI="wine:Red"/>
+            <NamedIndividual abbreviatedIRI="wine:Rose"/>
+            <NamedIndividual abbreviatedIRI="wine:White"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="wine:WineFlavor"/>
+        <ObjectOneOf>
+            <NamedIndividual abbreviatedIRI="wine:Delicate"/>
+            <NamedIndividual abbreviatedIRI="wine:Moderate"/>
+            <NamedIndividual abbreviatedIRI="wine:Strong"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="wine:WineSugar"/>
+        <ObjectOneOf>
+            <NamedIndividual abbreviatedIRI="wine:Dry"/>
+            <NamedIndividual abbreviatedIRI="wine:OffDry"/>
+            <NamedIndividual abbreviatedIRI="wine:Sweet"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class abbreviatedIRI="wine:ItalianWine"/>
+        <Class abbreviatedIRI="wine:Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="wine:WineBody"/>
+        <Class abbreviatedIRI="wine:WineTaste"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="wine:WineColor"/>
+        <Class abbreviatedIRI="wine:WineDescriptor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="wine:WineFlavor"/>
+        <Class abbreviatedIRI="wine:WineTaste"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="wine:WineSugar"/>
+        <Class abbreviatedIRI="wine:WineTaste"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="wine:WineTaste"/>
+        <Class abbreviatedIRI="wine:WineDescriptor"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class abbreviatedIRI="wine:ItalianWine"/>
+        <NamedIndividual IRI="#BastianichPremiumRed"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="wine:Winery"/>
+        <NamedIndividual IRI="#BastianichWinery"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#Price"/>
+        <NamedIndividual IRI="#PriceOfBastianichPremiumRed_Winery"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#Price"/>
+        <NamedIndividual IRI="#PriceOfMerlotBox_Winery"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="wine:Region"/>
+        <NamedIndividual abbreviatedIRI="wine:GaryFarrell"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="wine:Merlot"/>
+        <NamedIndividual abbreviatedIRI="wine:LongridgeMerlot"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="wine:hasBody"/>
+        <NamedIndividual IRI="#BastianichPremiumRed"/>
+        <NamedIndividual abbreviatedIRI="wine:Medium"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="wine:hasColor"/>
+        <NamedIndividual IRI="#BastianichPremiumRed"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Red"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="wine:hasFlavor"/>
+        <NamedIndividual IRI="#BastianichPremiumRed"/>
+        <NamedIndividual abbreviatedIRI="wine:Strong"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="wine:hasMaker"/>
+        <NamedIndividual IRI="#BastianichPremiumRed"/>
+        <NamedIndividual IRI="#BastianichWinery"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="wine:hasSugar"/>
+        <NamedIndividual IRI="#BastianichPremiumRed"/>
+        <NamedIndividual abbreviatedIRI="wine:Dry"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="wine:madeFromGrape"/>
+        <NamedIndividual IRI="#BastianichPremiumRed"/>
+        <NamedIndividual IRI="#UvaDiTroiaGrape"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#sell"/>
+        <NamedIndividual IRI="#BastianichWinery"/>
+        <NamedIndividual IRI="#BastianichPremiumRed"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#sell"/>
+        <NamedIndividual IRI="#BastianichWinery"/>
+        <NamedIndividual abbreviatedIRI="wine:GaryFarrellMerlot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#sell"/>
+        <NamedIndividual IRI="#BastianichWinery"/>
+        <NamedIndividual abbreviatedIRI="wine:LaneTannerPinotNoir"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#sell"/>
+        <NamedIndividual IRI="#BastianichWinery"/>
+        <NamedIndividual abbreviatedIRI="wine:LongridgeMerlot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#sell"/>
+        <NamedIndividual IRI="#BastianichWinery"/>
+        <NamedIndividual abbreviatedIRI="wine:MountEdenVineyardEstatePinotNoir"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#sell"/>
+        <NamedIndividual IRI="#BastianichWinery"/>
+        <NamedIndividual abbreviatedIRI="wine:MountadamPinotNoir"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="wine:locatedIn"/>
+        <NamedIndividual IRI="#BastianichWinery"/>
+        <NamedIndividual IRI="#FriuliVeneziaGiulia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#contains"/>
+        <NamedIndividual IRI="#BottleOfBastianichPremiumRed"/>
+        <NamedIndividual IRI="#BastianichPremiumRed"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#hasPrice"/>
+        <NamedIndividual IRI="#BottleOfBastianichPremiumRed"/>
+        <NamedIndividual IRI="#PriceOfBastianichPremiumRed_Winery"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#contains"/>
+        <NamedIndividual IRI="#BoxOfBastianichPremiumRed"/>
+        <NamedIndividual IRI="#BastianichPremiumRed"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#hasPrice"/>
+        <NamedIndividual IRI="#BoxOfBastianichPremiumRed"/>
+        <NamedIndividual IRI="#PriceOfBastianichPremiumRedBox_Winery"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#contains"/>
+        <NamedIndividual IRI="#BoxOfGaryFarrelMerlot"/>
+        <NamedIndividual abbreviatedIRI="wine:GaryFarrellMerlot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#hasPrice"/>
+        <NamedIndividual IRI="#BoxOfGaryFarrelMerlot"/>
+        <NamedIndividual IRI="#PriceOfGaryFarrelMerlotBox_Winery"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#contains"/>
+        <NamedIndividual IRI="#BoxOfLaneTennerPinotNoir"/>
+        <NamedIndividual abbreviatedIRI="wine:LaneTannerPinotNoir"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#hasPrice"/>
+        <NamedIndividual IRI="#BoxOfLaneTennerPinotNoir"/>
+        <NamedIndividual IRI="#PriceOfLaneTannerPinotNoirBox_Winery"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#contains"/>
+        <NamedIndividual IRI="#BoxOfLongridgeMerlot"/>
+        <NamedIndividual abbreviatedIRI="wine:LongridgeMerlot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#hasPrice"/>
+        <NamedIndividual IRI="#BoxOfLongridgeMerlot"/>
+        <NamedIndividual IRI="#PirceOfLongridgeMerlotBox_Winery"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://w3id.org/italia/onto/MU/hasMeasurementUnit"/>
+        <NamedIndividual IRI="#PirceOfLongridgeMerlotBox_Winery"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#Liter"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://w3id.org/italia/onto/MU/hasMeasurementUnit"/>
+        <NamedIndividual IRI="#PriceOfBastianichPremiumRedBox_Winery"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#Liter"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://w3id.org/italia/onto/MU/hasMeasurementUnit"/>
+        <NamedIndividual IRI="#PriceOfBastianichPremiumRed_Winery"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#BottleUnit"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://w3id.org/italia/onto/MU/hasMeasurementUnit"/>
+        <NamedIndividual IRI="#PriceOfGaryFarrelMerlotBox_Winery"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#Liter"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://w3id.org/italia/onto/MU/hasMeasurementUnit"/>
+        <NamedIndividual IRI="#PriceOfLaneTannerPinotNoirBox_Winery"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#Liter"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://w3id.org/italia/onto/MU/hasMeasurementUnit"/>
+        <NamedIndividual IRI="#PriceOfMerlotBox_Winery"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#Liter"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="wine:yearValue"/>
+        <NamedIndividual IRI="#BastianichPremiumRed"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2015</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#amount"/>
+        <NamedIndividual IRI="#BottleOfBastianichPremiumRed"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#amount"/>
+        <NamedIndividual IRI="#BoxOfBastianichPremiumRed"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">18</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#amount"/>
+        <NamedIndividual IRI="#BoxOfGaryFarrelMerlot"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#amount"/>
+        <NamedIndividual IRI="#BoxOfLaneTennerPinotNoir"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#amount"/>
+        <NamedIndividual IRI="#BoxOfLongridgeMerlot"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#price"/>
+        <NamedIndividual IRI="#PirceOfLongridgeMerlotBox_Winery"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#price"/>
+        <NamedIndividual IRI="#PriceOfBastianichPremiumRedBox_Winery"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">6.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#price"/>
+        <NamedIndividual IRI="#PriceOfBastianichPremiumRed_Winery"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">7.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#price"/>
+        <NamedIndividual IRI="#PriceOfGaryFarrelMerlotBox_Winery"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">5.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#price"/>
+        <NamedIndividual IRI="#PriceOfLaneTannerPinotNoirBox_Winery"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.78</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#price"/>
+        <NamedIndividual IRI="#PriceOfMerlotBox_Winery"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.85</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="wine:hasBody"/>
+        <ObjectProperty abbreviatedIRI="wine:hasWineDescriptor"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="wine:hasColor"/>
+        <ObjectProperty abbreviatedIRI="wine:hasWineDescriptor"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="wine:hasFlavor"/>
+        <ObjectProperty abbreviatedIRI="wine:hasWineDescriptor"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="wine:hasSugar"/>
+        <ObjectProperty abbreviatedIRI="wine:hasWineDescriptor"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="wine:madeFromGrape"/>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#madeFromFruit"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="wine:madeFromGrape"/>
+        <ObjectProperty abbreviatedIRI="wine:madeIntoWine"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="wine:hasBody"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="wine:hasColor"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="wine:hasFlavor"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="wine:hasSugar"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="wine:hasVintageYear"/>
+    </FunctionalObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty abbreviatedIRI="wine:adjacentRegion"/>
+    </SymmetricObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty abbreviatedIRI="wine:locatedIn"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#madeFromFruit"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#ConsumableThing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="wine:adjacentRegion"/>
+        <Class abbreviatedIRI="wine:Region"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="wine:grownIn"/>
+        <Class abbreviatedIRI="wine:WineGrape"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="wine:hasColor"/>
+        <Class abbreviatedIRI="wine:Wine"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="wine:hasWineDescriptor"/>
+        <Class abbreviatedIRI="wine:Wine"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="wine:adjacentRegion"/>
+        <Class abbreviatedIRI="wine:Region"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="wine:grownIn"/>
+        <Class abbreviatedIRI="wine:Region"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="wine:hasBody"/>
+        <Class abbreviatedIRI="wine:WineBody"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="wine:hasColor"/>
+        <Class abbreviatedIRI="wine:WineColor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="wine:hasFlavor"/>
+        <Class abbreviatedIRI="wine:WineFlavor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="wine:hasSugar"/>
+        <Class abbreviatedIRI="wine:WineSugar"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="wine:hasWineDescriptor"/>
+        <Class abbreviatedIRI="wine:WineDescriptor"/>
+    </ObjectPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="wine:yearValue"/>
+        <Datatype abbreviatedIRI="xsd:positiveInteger"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PirceOfLongridgeMerlotBox_Winery</IRI>
+        <Literal xml:lang="en">PriceOfLongridgeMerlotBox_Winery</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wine:WineDescriptor</AbbreviatedIRI>
+        <Literal>Made WineDescriptor unionType of tastes and color</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

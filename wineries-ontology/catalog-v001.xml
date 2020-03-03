@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1583144423545" name="http://www.semanticweb.org/carlo/ontologies/2020/2/winery-astemia" uri="winery-astemia.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1583144423545" name="http://www.semanticweb.org/carloalberto/ontologies/2020/1/winery-bastianich" uri="old-winery-bastianich.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1583144423545" name="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winery-astemia" uri="old-winery-astemia.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1583144423545" name="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winery-bolla" uri="old-winery-bolla.owl"/>
+    </group>
+</catalog>

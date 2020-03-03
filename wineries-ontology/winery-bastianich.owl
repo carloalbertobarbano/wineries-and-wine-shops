@@ -1,0 +1,1833 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/carlo/ontologies/2020/2/winery-bastianich"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/carlo/ontologies/2020/2/winery-bastianich">
+    <Prefix name="" IRI="http://www.semanticweb.org/carlo/ontologies/2020/2/winery-bastianich"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="en">winery-* ontologies are examples of real world data, gathered from different sources</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <Literal xml:lang="en">Bastianich Winery Ontology</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/bag.owl#Item"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/collectionentity.owl#Collection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#BigContainer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#Bottle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#Distributor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#Price"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#SmallContainer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#ConsumableThing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Dessert"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#EdibleThing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Fowl"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Fruit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Grape"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Juice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Meal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#MealCourse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Meat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#NonSweetFruit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#OtherTomatoBasedFood"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Pasta"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#PotableLiquid"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Seafood"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#SweetFruit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Wine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#ItalianWine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#PinotBlanc"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#PinotNoir"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Region"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Vintage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#VintageYear"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Wine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineBody"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineColor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineDescriptor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineFlavor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineGrape"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineSugar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineTaste"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Winery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/italia/onto/MU/MeasurementUnit"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#containedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#contains"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#hasPrice"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#sell"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#soldBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#course"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#hasDrink"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#hasFood"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#madeFromFruit"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#adjacentRegion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasBody"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasColor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasFlavor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasMaker"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasSugar"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasVintageYear"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasWineDescriptor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#locatedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#madeFromGrape"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#madeIntoWine"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#producesWine"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/italia/onto/MU/hasMeasurementUnit"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#amount"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#price"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#yearValue"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BottleOfPinotBiancoSOLO"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BoxOfLaneTannerPinotNoir"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BoxOfMountadamPinotNoir"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BoxOfPinotBiancoSOLO"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FriuliVeneziaGiulia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LaneTannerPinotNoirBox_Price"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MountadamPinotNoirBox_Price"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PinotBiancoSOLO"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PinotBiancoSOLOBottle_Price_Winery"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PinotBiancoSOLOBox_Price"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WineryBastianich"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#BottleUnit"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#Liter"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Delicate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Dry"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Full"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Light"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Medium"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Moderate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#OffDry"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Red"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Rose"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Strong"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Sweet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#White"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#AustralianRegion"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#ChardonnayGrape"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#ChateauChevalBlanc"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#ChateauDYchem"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#ChateauDeMeursault"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#ChateauLafiteRothschild"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#ChateauMargauxWinery"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#ChateauMorgon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#ClosDeLaPoussie"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#ClosDeVougeot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#CongressSprings"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Corbans"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#CortonMontrachet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Cotturi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#DAnjou"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Delicate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Dry"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Elyse"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Foxen"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Full"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#GaryFarrell"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#ItalianRegion"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#KalinCellars"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#KathrynKennedy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#LaneTanner"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#LaneTannerPinotNoir"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Light"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Longridge"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Marietta"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#McGuinnesso"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Medium"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Moderate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#MountEdenVineyard"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Mountadam"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#MountadamPinotNoir"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#OffDry"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#PageMillWinery"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#PeterMccoy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#PinotBlancGrape"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#PinotNoirGrape"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#PulignyMontrachet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Red"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Rose"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#SantaBarbaraRegion"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#SantaCruzMountainVineyard"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#SaucelitoCanyon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#SchlossRothermel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#SchlossVolrad"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#SeanThackrey"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Selaks"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#SevreEtMaine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#SouthAustraliaRegion"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#StGenevieve"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Stonleigh"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Strong"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Sweet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Taylor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Ventana"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#White"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WhitehallLane"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="rdf:type"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/collectionentity.owl#Collection"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#amount"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:positiveInteger"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">2</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#BigContainer"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#amount"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:positiveInteger"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">12</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#Bottle"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#amount"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:positiveInteger"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">0</Literal>
+                </FacetRestriction>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">1</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#Distributor"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#sell"/>
+            <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/bag.owl#Item"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#SmallContainer"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#amount"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:positiveInteger"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">2</Literal>
+                </FacetRestriction>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">11</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Fruit"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#NonSweetFruit"/>
+            <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#SweetFruit"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Wine"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Wine"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#ItalianWine"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Wine"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#locatedIn"/>
+                <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#ItalianRegion"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#PinotBlanc"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Wine"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#madeFromGrape"/>
+                <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#PinotBlancGrape"/>
+            </ObjectHasValue>
+            <ObjectMaxCardinality cardinality="1">
+                <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#madeFromGrape"/>
+            </ObjectMaxCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#PinotNoir"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Wine"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#madeFromGrape"/>
+                <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#PinotNoirGrape"/>
+            </ObjectHasValue>
+            <ObjectMaxCardinality cardinality="1">
+                <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#madeFromGrape"/>
+            </ObjectMaxCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineBody"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Full"/>
+            <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Light"/>
+            <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Medium"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineColor"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Red"/>
+            <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Rose"/>
+            <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#White"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineDescriptor"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineColor"/>
+            <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineTaste"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineFlavor"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Delicate"/>
+            <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Moderate"/>
+            <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Strong"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineSugar"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Dry"/>
+            <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#OffDry"/>
+            <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Sweet"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/collectionentity.owl#Collection"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/bag.owl#Item"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#BigContainer"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/bag.owl#Item"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#Bottle"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/bag.owl#Item"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#SmallContainer"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/bag.owl#Item"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Dessert"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#EdibleThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#EdibleThing"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#ConsumableThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Fowl"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#EdibleThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Fruit"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#EdibleThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Grape"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#SweetFruit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Juice"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#PotableLiquid"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Juice"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#madeFromFruit"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Meal"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#ConsumableThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Meal"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#course"/>
+            <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#MealCourse"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Meal"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#course"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#MealCourse"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#ConsumableThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#MealCourse"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#hasDrink"/>
+            <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Wine"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#MealCourse"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#hasDrink"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#MealCourse"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#hasFood"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Meat"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#EdibleThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#NonSweetFruit"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Fruit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#OtherTomatoBasedFood"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#EdibleThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Pasta"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#EdibleThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#PotableLiquid"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#ConsumableThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Seafood"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#EdibleThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#SweetFruit"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Fruit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#PinotBlanc"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasColor"/>
+            <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#White"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#PinotNoir"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasColor"/>
+            <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Red"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Vintage"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasVintageYear"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Wine"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#PotableLiquid"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Wine"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#locatedIn"/>
+            <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Region"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Wine"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasMaker"/>
+            <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Winery"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Wine"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#madeFromGrape"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Wine"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasBody"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Wine"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasColor"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Wine"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasFlavor"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Wine"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasMaker"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Wine"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasSugar"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineBody"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineTaste"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineColor"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineDescriptor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineFlavor"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineTaste"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineGrape"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Grape"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineSugar"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineTaste"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineTaste"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineDescriptor"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Dessert"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Fowl"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Dessert"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Fruit"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Dessert"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Meat"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Dessert"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#OtherTomatoBasedFood"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Dessert"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Pasta"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Dessert"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Seafood"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#EdibleThing"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Meal"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#EdibleThing"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#MealCourse"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#EdibleThing"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#PotableLiquid"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Fowl"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Fruit"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Fowl"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Meat"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Fowl"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#OtherTomatoBasedFood"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Fowl"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Pasta"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Fowl"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Seafood"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Fruit"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Meat"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Fruit"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#OtherTomatoBasedFood"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Fruit"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Pasta"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Fruit"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Seafood"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Meal"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#MealCourse"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Meal"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#PotableLiquid"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#MealCourse"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#PotableLiquid"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Meat"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#OtherTomatoBasedFood"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Meat"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Pasta"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Meat"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Seafood"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#NonSweetFruit"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#SweetFruit"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#OtherTomatoBasedFood"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Pasta"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#OtherTomatoBasedFood"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Seafood"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Pasta"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Seafood"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/bag.owl#Item"/>
+        <NamedIndividual IRI="#BottleOfPinotBiancoSOLO"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/bag.owl#Item"/>
+        <NamedIndividual IRI="#BoxOfLaneTannerPinotNoir"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/bag.owl#Item"/>
+        <NamedIndividual IRI="#BoxOfMountadamPinotNoir"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/bag.owl#Item"/>
+        <NamedIndividual IRI="#BoxOfPinotBiancoSOLO"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Region"/>
+        <NamedIndividual IRI="#FriuliVeneziaGiulia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#Price"/>
+        <NamedIndividual IRI="#LaneTannerPinotNoirBox_Price"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#Price"/>
+        <NamedIndividual IRI="#MountadamPinotNoirBox_Price"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#PinotBlanc"/>
+        <NamedIndividual IRI="#PinotBiancoSOLO"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#Price"/>
+        <NamedIndividual IRI="#PinotBiancoSOLOBottle_Price_Winery"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#Price"/>
+        <NamedIndividual IRI="#PinotBiancoSOLOBox_Price"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Winery"/>
+        <NamedIndividual IRI="#WineryBastianich"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://w3id.org/italia/onto/MU/MeasurementUnit"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#BottleUnit"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://w3id.org/italia/onto/MU/MeasurementUnit"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#Liter"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Region"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#AustralianRegion"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Delicate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineFlavor"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Delicate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Dry"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineSugar"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Dry"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Full"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineBody"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Full"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Region"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#ItalianRegion"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Winery"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#LaneTanner"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#PinotNoir"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#LaneTannerPinotNoir"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Light"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineBody"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Light"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Medium"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineBody"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Medium"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Moderate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineFlavor"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Moderate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Winery"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Mountadam"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#PinotNoir"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#MountadamPinotNoir"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#OffDry"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineSugar"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#OffDry"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineGrape"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#PinotNoirGrape"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Red"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineColor"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Red"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Rose"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineColor"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Rose"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Region"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#SantaBarbaraRegion"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Region"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#SouthAustraliaRegion"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Strong"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineFlavor"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Strong"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Sweet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineSugar"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Sweet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#White"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineColor"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#White"/>
+    </ClassAssertion>
+    <SameIndividual>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Delicate"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Delicate"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Dry"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Dry"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Full"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Full"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Light"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Light"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Medium"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Medium"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Moderate"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Moderate"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#OffDry"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#OffDry"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Red"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Red"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Rose"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Rose"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Strong"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Strong"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Sweet"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Sweet"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#White"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#White"/>
+    </SameIndividual>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#WineryBastianich"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#LaneTanner"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Mountadam"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Delicate"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Moderate"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Strong"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Dry"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#OffDry"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Dry"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#OffDry"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Sweet"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Dry"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Sweet"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Full"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Light"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Medium"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#OffDry"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Sweet"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Red"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Rose"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#White"/>
+    </DifferentIndividuals>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#contains"/>
+        <NamedIndividual IRI="#BottleOfPinotBiancoSOLO"/>
+        <NamedIndividual IRI="#PinotBiancoSOLO"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#hasPrice"/>
+        <NamedIndividual IRI="#BottleOfPinotBiancoSOLO"/>
+        <NamedIndividual IRI="#PinotBiancoSOLOBottle_Price_Winery"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#contains"/>
+        <NamedIndividual IRI="#BoxOfLaneTannerPinotNoir"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#LaneTannerPinotNoir"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#hasPrice"/>
+        <NamedIndividual IRI="#BoxOfLaneTannerPinotNoir"/>
+        <NamedIndividual IRI="#LaneTannerPinotNoirBox_Price"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#contains"/>
+        <NamedIndividual IRI="#BoxOfMountadamPinotNoir"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#MountadamPinotNoir"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#hasPrice"/>
+        <NamedIndividual IRI="#BoxOfMountadamPinotNoir"/>
+        <NamedIndividual IRI="#MountadamPinotNoirBox_Price"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#contains"/>
+        <NamedIndividual IRI="#BoxOfPinotBiancoSOLO"/>
+        <NamedIndividual IRI="#PinotBiancoSOLO"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#hasPrice"/>
+        <NamedIndividual IRI="#BoxOfPinotBiancoSOLO"/>
+        <NamedIndividual IRI="#PinotBiancoSOLOBox_Price"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#locatedIn"/>
+        <NamedIndividual IRI="#FriuliVeneziaGiulia"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#ItalianRegion"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://w3id.org/italia/onto/MU/hasMeasurementUnit"/>
+        <NamedIndividual IRI="#LaneTannerPinotNoirBox_Price"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#Liter"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://w3id.org/italia/onto/MU/hasMeasurementUnit"/>
+        <NamedIndividual IRI="#MountadamPinotNoirBox_Price"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#Liter"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasBody"/>
+        <NamedIndividual IRI="#PinotBiancoSOLO"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Full"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasColor"/>
+        <NamedIndividual IRI="#PinotBiancoSOLO"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#White"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasFlavor"/>
+        <NamedIndividual IRI="#PinotBiancoSOLO"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Moderate"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasMaker"/>
+        <NamedIndividual IRI="#PinotBiancoSOLO"/>
+        <NamedIndividual IRI="#WineryBastianich"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasSugar"/>
+        <NamedIndividual IRI="#PinotBiancoSOLO"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Sweet"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#locatedIn"/>
+        <NamedIndividual IRI="#PinotBiancoSOLO"/>
+        <NamedIndividual IRI="#FriuliVeneziaGiulia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#madeFromGrape"/>
+        <NamedIndividual IRI="#PinotBiancoSOLO"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#PinotBlancGrape"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://w3id.org/italia/onto/MU/hasMeasurementUnit"/>
+        <NamedIndividual IRI="#PinotBiancoSOLOBottle_Price_Winery"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#BottleUnit"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://w3id.org/italia/onto/MU/hasMeasurementUnit"/>
+        <NamedIndividual IRI="#PinotBiancoSOLOBox_Price"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#Liter"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#sell"/>
+        <NamedIndividual IRI="#WineryBastianich"/>
+        <NamedIndividual IRI="#BottleOfPinotBiancoSOLO"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#sell"/>
+        <NamedIndividual IRI="#WineryBastianich"/>
+        <NamedIndividual IRI="#BoxOfLaneTannerPinotNoir"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#sell"/>
+        <NamedIndividual IRI="#WineryBastianich"/>
+        <NamedIndividual IRI="#BoxOfMountadamPinotNoir"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#sell"/>
+        <NamedIndividual IRI="#WineryBastianich"/>
+        <NamedIndividual IRI="#BoxOfPinotBiancoSOLO"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasBody"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#LaneTannerPinotNoir"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Light"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasFlavor"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#LaneTannerPinotNoir"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Delicate"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasMaker"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#LaneTannerPinotNoir"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#LaneTanner"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasSugar"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#LaneTannerPinotNoir"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Dry"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#locatedIn"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#LaneTannerPinotNoir"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#SantaBarbaraRegion"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasBody"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#MountadamPinotNoir"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Medium"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasFlavor"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#MountadamPinotNoir"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Moderate"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasMaker"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#MountadamPinotNoir"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Mountadam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasSugar"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#MountadamPinotNoir"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Dry"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#locatedIn"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#MountadamPinotNoir"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#SouthAustraliaRegion"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#locatedIn"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#SouthAustraliaRegion"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#AustralianRegion"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#amount"/>
+        <NamedIndividual IRI="#BottleOfPinotBiancoSOLO"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#amount"/>
+        <NamedIndividual IRI="#BoxOfLaneTannerPinotNoir"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#amount"/>
+        <NamedIndividual IRI="#BoxOfMountadamPinotNoir"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">18</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#amount"/>
+        <NamedIndividual IRI="#BoxOfPinotBiancoSOLO"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#price"/>
+        <NamedIndividual IRI="#LaneTannerPinotNoirBox_Price"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">24.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#price"/>
+        <NamedIndividual IRI="#MountadamPinotNoirBox_Price"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">28.45</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#price"/>
+        <NamedIndividual IRI="#PinotBiancoSOLOBottle_Price_Winery"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">30.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#price"/>
+        <NamedIndividual IRI="#PinotBiancoSOLOBox_Price"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">20.0</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasBody"/>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasWineDescriptor"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasColor"/>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasWineDescriptor"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasFlavor"/>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasWineDescriptor"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasSugar"/>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasWineDescriptor"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#containedIn"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#contains"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#sell"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#soldBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasMaker"/>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#producesWine"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#madeFromGrape"/>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#madeIntoWine"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#contains"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasBody"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasColor"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasFlavor"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasMaker"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasSugar"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasVintageYear"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="https://w3id.org/italia/onto/MU/hasMeasurementUnit"/>
+    </FunctionalObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#adjacentRegion"/>
+    </SymmetricObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#locatedIn"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#containedIn"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Wine"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#contains"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/bag.owl#Item"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#hasPrice"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#sell"/>
+        <Class IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#Distributor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#soldBy"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/bag.owl#Item"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#madeFromFruit"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#ConsumableThing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#adjacentRegion"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Region"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasColor"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Wine"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasVintageYear"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Vintage"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasWineDescriptor"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Wine"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#locatedIn"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://w3id.org/italia/onto/MU/hasMeasurementUnit"/>
+        <Class IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#Price"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#containedIn"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/bag.owl#Item"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#contains"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Wine"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#hasPrice"/>
+        <Class IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#Price"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#sell"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/bag.owl#Item"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#soldBy"/>
+        <Class IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#Distributor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#madeFromFruit"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Fruit"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#adjacentRegion"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Region"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasBody"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineBody"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasColor"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineColor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasFlavor"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineFlavor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasSugar"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineSugar"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasVintageYear"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#VintageYear"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasWineDescriptor"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineDescriptor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#locatedIn"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Region"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://w3id.org/italia/onto/MU/hasMeasurementUnit"/>
+        <Class IRI="https://w3id.org/italia/onto/MU/MeasurementUnit"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#amount"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/bag.owl#Item"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#price"/>
+        <Class IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#Price"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#yearValue"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#VintageYear"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#amount"/>
+        <Datatype abbreviatedIRI="xsd:positiveInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#price"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#yearValue"/>
+        <Datatype abbreviatedIRI="xsd:positiveInteger"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.ontologydesignpatterns.org/cp/owl/bag.owl#Item</IRI>
+        <Literal xml:lang="en">An individual article or unit, especially one that is part of a list, collection, or set.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.ontologydesignpatterns.org/cp/owl/bag.owl#Item</IRI>
+        <Literal xml:lang="en">Item</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.ontologydesignpatterns.org/cp/owl/collectionentity.owl#Collection</IRI>
+        <Literal xml:lang="en">A collection of objects of a particular category</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.ontologydesignpatterns.org/cp/owl/collectionentity.owl#Collection</IRI>
+        <Literal xml:lang="en">Collection</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PinotBiancoSOLO</IRI>
+        <Literal xml:lang="en">Pinot Blanc made by Bastianich Winery
+Data from https://bastianich.com/products/pinot-bianco-solo-lt-0-75-2017</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PinotBiancoSOLO</IRI>
+        <Literal xml:lang="en">PinotBiancoSOLO</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#BigContainer</IRI>
+        <Literal xml:lang="en">A container is any receptacle or enclosure for holding a product used in storage, packaging, and shipping. This term represents a conteiner that has at least 12 items</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#BigContainer</IRI>
+        <Literal xml:lang="en">BigContainer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#Bottle</IRI>
+        <Literal xml:lang="en">A bottle is a container of variable capacity, certified on the order of size of the liter, with a neck narrower than the arm, sometimes equipped with a cap.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#Bottle</IRI>
+        <Literal xml:lang="en">Bottle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#Distributor</IRI>
+        <Literal xml:lang="en">An agent who supplies goods to retailers. In this domain this terms mean a winery (Cantina)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#Distributor</IRI>
+        <Literal xml:lang="en">Distributor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#Price</IRI>
+        <Literal xml:lang="en">Number that quantitatively indicates a price per quantity measure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#Price</IRI>
+        <Literal xml:lang="en">Price</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#SmallContainer</IRI>
+        <Literal xml:lang="en">A container is any receptacle or enclosure for holding a product used in storage, packaging, and shipping. This term represents a conteiner that has at max 11 items</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#SmallContainer</IRI>
+        <Literal xml:lang="en">SmallContainer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#amount</IRI>
+        <Literal xml:lang="en">amount</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdf:type"/>
+        <IRI>http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#containedIn</IRI>
+        <Literal xml:lang="en">conteinedIn</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#containedIn</IRI>
+        <Literal xml:lang="en">Wine -&gt; Item
+Concept that associates the wine entity with the property of being contained in an object</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#contains</IRI>
+        <Literal xml:lang="en">Item -&gt; Wine
+Concept that associates the Item entity with the property of contained in an object</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#contains</IRI>
+        <Literal xml:lang="en">contains</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdf:type"/>
+        <IRI>http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#hasPrice</IRI>
+        <Literal xml:lang="en">has Price</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#hasPrice</IRI>
+        <Literal xml:lang="en">Item -&gt; Pirce
+Concept that associates the item entity with the property to have a price</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#price</IRI>
+        <Literal xml:lang="en">price</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#sell</IRI>
+        <Literal xml:lang="en">Distributor -&gt; Item
+Concept that associates the Distribuot entity with the property to sell an item</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#sell</IRI>
+        <Literal xml:lang="en">sell</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#soldBy</IRI>
+        <Literal xml:lang="en">Item -&gt; Distributor
+Concept that associates the Item entity with the property of 
+be sold by a Distributor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#soldBy</IRI>
+        <Literal xml:lang="en">sold By</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Wine</IRI>
+        <Literal xml:lang="en">Wine is an alcoholic drink, obtained by fermenting the fruit of the vine, grapes, or must.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Wine</IRI>
+        <Literal xml:lang="en">http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Wine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Wine</IRI>
+        <Literal xml:lang="fr">vin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Wine</IRI>
+        <Literal xml:lang="en">wine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineDescriptor</IRI>
+        <Literal>Made WineDescriptor unionType of tastes and color</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Winery</IRI>
+        <Literal xml:lang="en">A place that makes wine and also usually grows its own grapes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Winery</IRI>
+        <Literal xml:lang="en">Winery</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/italia/onto/MU/MeasurementUnit</IRI>
+        <Literal xml:lang="en">The unit of measurement is a predetermined quantity of a specific physical quantity to which, as mentioned, the unit value is conventionally attributed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://w3id.org/italia/onto/MU/MeasurementUnit</IRI>
+        <Literal xml:lang="en">MeasurementUnit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdf:type"/>
+        <IRI>https://w3id.org/italia/onto/MU/hasMeasurementUnit</IRI>
+        <Literal xml:lang="en">has Measurement Unit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/italia/onto/MU/hasMeasurementUnit</IRI>
+        <Literal xml:lang="en">Pirice -&gt; Measurement Unit
+Concept that associates the Price entity (value Number) with the property of have a specific unit of measure</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

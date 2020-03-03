@@ -1,0 +1,768 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winery-bolla#"
+     xml:base="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winery-bolla"
+     xmlns:MU="https://w3id.org/italia/onto/MU/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:wine="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#"
+     xmlns:winecoredistributor="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winery-bolla">
+        <owl:imports rdf:resource="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor"/>
+        <vann:preferredNamespaceUri xml:lang="en">http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winery-bolla</vann:preferredNamespaceUri>
+        <rdfs:isDefinedBy xml:lang="en">22/02/2020</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy xml:lang="en">Francesco Iodice
+Carlo Alberto Barbano</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Wine Bolla Ontology</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#amount -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#amount"/>
+    
+
+
+    <!-- http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#contains -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#contains"/>
+    
+
+
+    <!-- http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#hasPrice -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#hasPrice"/>
+    
+
+
+    <!-- http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#price -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#price"/>
+    
+
+
+    <!-- http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#sell -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#sell"/>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#type -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/MU/hasMeasurementUnit -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/MU/hasMeasurementUnit"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/carloalberto/ontologies/2020/1/wineries#originatedFrom -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/carloalberto/ontologies/2020/1/wineries#originatedFrom"/>
+    
+
+
+    <!-- http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#madeFromFruit -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#madeFromFruit"/>
+    
+
+
+    <!-- http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#adjacentRegion -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#adjacentRegion">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Region"/>
+        <rdfs:range rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Region"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#grownIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#grownIn">
+        <rdfs:domain rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineGrape"/>
+        <rdfs:range rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Region"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasBody -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasBody">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasWineDescriptor"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineBody"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasColor -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasColor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasWineDescriptor"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Wine"/>
+        <rdfs:range rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineColor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasFlavor -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasFlavor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasWineDescriptor"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineFlavor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasMaker -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasMaker">
+        <owl:inverseOf rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#producesWine"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasSugar -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasSugar">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasWineDescriptor"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineSugar"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasVintageYear -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasVintageYear">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasWineDescriptor -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasWineDescriptor"/>
+    
+
+
+    <!-- http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#locatedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#locatedIn">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#madeFromGrape -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#madeFromGrape">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#madeFromFruit"/>
+        <owl:inverseOf rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#madeIntoWine"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#madeIntoWine -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#madeIntoWine"/>
+    
+
+
+    <!-- http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#producesWine -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#producesWine"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#yearValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#yearValue">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Grape -->
+
+    <owl:Class rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Grape"/>
+    
+
+
+    <!-- http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#CabernetSauvignon -->
+
+    <owl:Class rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#CabernetSauvignon">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Wine"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#madeFromGrape"/>
+                        <owl:hasValue rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#CabernetSauvignonGrape"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#madeFromGrape"/>
+                        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasBody"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Full"/>
+                            <rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Medium"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasFlavor"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Moderate"/>
+                            <rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Strong"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasColor"/>
+                <owl:hasValue rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Red"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasSugar"/>
+                <owl:hasValue rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Dry"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#ItalianWine -->
+
+    <owl:Class rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#ItalianWine">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Wine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Region -->
+
+    <owl:Class rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Region"/>
+    
+
+
+    <!-- http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Wine -->
+
+    <owl:Class rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Wine">
+        <rdfs:comment xml:lang="en">Wine is an alcoholic drink, obtained by fermenting the fruit of the vine, grapes, or must.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en">http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Wine</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Wine</rdfs:label>
+        <rdfs:label xml:lang="fr">vin</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineBody -->
+
+    <owl:Class rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineBody">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Full"/>
+                    <rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Light"/>
+                    <rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Medium"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineTaste"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineColor -->
+
+    <owl:Class rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineColor">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Red"/>
+                    <rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Rose"/>
+                    <rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#White"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineDescriptor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineDescriptor -->
+
+    <owl:Class rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineDescriptor">
+        <rdfs:comment>Made WineDescriptor unionType of tastes and color</rdfs:comment>
+        <rdfs:label xml:lang="en">WineDescriptor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineFlavor -->
+
+    <owl:Class rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineFlavor">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Delicate"/>
+                    <rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Moderate"/>
+                    <rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Strong"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineTaste"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineGrape -->
+
+    <owl:Class rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineGrape"/>
+    
+
+
+    <!-- http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineSugar -->
+
+    <owl:Class rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineSugar">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Dry"/>
+                    <rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#OffDry"/>
+                    <rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Sweet"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineTaste"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineTaste -->
+
+    <owl:Class rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineTaste">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineDescriptor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Winery -->
+
+    <owl:Class rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Winery">
+        <rdfs:comment xml:lang="en">A place that makes wine and also usually grows its own grapes</rdfs:comment>
+        <rdfs:label xml:lang="en">Winery</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winery-bolla#Apulia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winery-bolla#Apulia">
+        <rdf:type rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Region"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winery-bolla#BoxOfBollaPremium -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winery-bolla#BoxOfBollaPremium">
+        <winecoredistributor:amount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</winecoredistributor:amount>
+        <winecoredistributor:contains rdf:resource="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winery-bolla#OWLNamedIndividual_5aaf740c_5653_4c90_9def_30d728d74ffb"/>
+        <winecoredistributor:hasPrice rdf:resource="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winery-bolla#OWLNamedIndividual_06e5a3b7_b096_4c46_af45_ca62202a8c01"/>
+        <rdfs:label>BottleOfBollaPremium</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winery-bolla#CorvinaGrape -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winery-bolla#CorvinaGrape"/>
+    
+
+
+    <!-- http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winery-bolla#OWLNamedIndividual_06e5a3b7_b096_4c46_af45_ca62202a8c01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winery-bolla#OWLNamedIndividual_06e5a3b7_b096_4c46_af45_ca62202a8c01">
+        <winecoredistributor:price rdf:datatype="http://www.w3.org/2001/XMLSchema#float">9.8</winecoredistributor:price>
+        <rdfs:label xml:lang="en">PriceOfBollaPremium_Winery</rdfs:label>
+        <MU:hasMeasurementUnit rdf:resource="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#BottleUnit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winery-bolla#OWLNamedIndividual_12874b6c_eeb0_4a48_b1a1_4f2891d0055a -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winery-bolla#OWLNamedIndividual_12874b6c_eeb0_4a48_b1a1_4f2891d0055a">
+        <wine:locatedIn rdf:resource="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winery-bolla#Apulia"/>
+        <winecoredistributor:sell rdf:resource="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winery-bolla#OWLNamedIndividual_5aaf740c_5653_4c90_9def_30d728d74ffb"/>
+        <winecoredistributor:sell rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#FormanCabernetSauvignon"/>
+        <winecoredistributor:sell rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#MariettaCabernetSauvignon"/>
+        <winecoredistributor:sell rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#SantaCruzMountainVineyardCabernetSauvignon"/>
+        <rdfs:label xml:lang="en">BollaWinery</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winery-bolla#OWLNamedIndividual_149f3b0d_f6f2_46fb_92da_59c227c38153 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winery-bolla#OWLNamedIndividual_149f3b0d_f6f2_46fb_92da_59c227c38153">
+        <winecoredistributor:price rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.2</winecoredistributor:price>
+        <rdfs:label xml:lang="en">PriceOfPageMillWineryCabernetSauvignonBox_Winery</rdfs:label>
+        <MU:hasMeasurementUnit rdf:resource="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#Liter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winery-bolla#OWLNamedIndividual_1aa2642f_60fb_4f8e_9ebd_5fc733740575 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winery-bolla#OWLNamedIndividual_1aa2642f_60fb_4f8e_9ebd_5fc733740575">
+        <winecoredistributor:price rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.2</winecoredistributor:price>
+        <rdfs:label xml:lang="en">PriceOfFormanCabernetSauvignonBox_Winery</rdfs:label>
+        <MU:hasMeasurementUnit rdf:resource="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#Liter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winery-bolla#OWLNamedIndividual_4bdf7b8d_48ee_4b02_ba75_c9b529589855 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winery-bolla#OWLNamedIndividual_4bdf7b8d_48ee_4b02_ba75_c9b529589855">
+        <winecoredistributor:amount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</winecoredistributor:amount>
+        <winecoredistributor:contains rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#PageMillWineryCabernetSauvignon"/>
+        <winecoredistributor:hasPrice rdf:resource="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winery-bolla#OWLNamedIndividual_149f3b0d_f6f2_46fb_92da_59c227c38153"/>
+        <rdfs:label xml:lang="en">BoxOfPageMillWineryCabernetSauvignon</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winery-bolla#OWLNamedIndividual_5aaf740c_5653_4c90_9def_30d728d74ffb -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winery-bolla#OWLNamedIndividual_5aaf740c_5653_4c90_9def_30d728d74ffb">
+        <rdf:type rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#ItalianWine"/>
+        <wine:hasBody rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Full"/>
+        <wine:hasColor rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Red"/>
+        <wine:hasFlavor rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Strong"/>
+        <wine:hasMaker rdf:resource="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winery-bolla#OWLNamedIndividual_12874b6c_eeb0_4a48_b1a1_4f2891d0055a"/>
+        <wine:hasSugar rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Dry"/>
+        <wine:madeFromGrape rdf:resource="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winery-bolla#CorvinaGrape"/>
+        <wine:yearValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2014</wine:yearValue>
+        <rdfs:label xml:lang="en">BollaAmarone</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winery-bolla#OWLNamedIndividual_6f0b4dfa_5fb5_4715_8d26_eec0a43f8bf9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winery-bolla#OWLNamedIndividual_6f0b4dfa_5fb5_4715_8d26_eec0a43f8bf9">
+        <winecoredistributor:amount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</winecoredistributor:amount>
+        <winecoredistributor:contains rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#FormanCabernetSauvignon"/>
+        <winecoredistributor:hasPrice rdf:resource="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winery-bolla#OWLNamedIndividual_1aa2642f_60fb_4f8e_9ebd_5fc733740575"/>
+        <rdfs:label xml:lang="en">BoxOfFormanCabernetSauvignon</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winery-bolla#OWLNamedIndividual_9336a64b_2387_4d53_a7e7_f7a9b4f9d30f -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winery-bolla#OWLNamedIndividual_9336a64b_2387_4d53_a7e7_f7a9b4f9d30f">
+        <winecoredistributor:amount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</winecoredistributor:amount>
+        <winecoredistributor:contains rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#MariettaCabernetSauvignon"/>
+        <winecoredistributor:hasPrice rdf:resource="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winery-bolla#OWLNamedIndividual_a815f612_c0a5_4f62_ac91_dd5efac3b934"/>
+        <rdfs:label xml:lang="en">BoxOfMariettaCabernetSauvignon</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winery-bolla#OWLNamedIndividual_a815f612_c0a5_4f62_ac91_dd5efac3b934 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winery-bolla#OWLNamedIndividual_a815f612_c0a5_4f62_ac91_dd5efac3b934">
+        <winecoredistributor:price rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.8</winecoredistributor:price>
+        <rdfs:label xml:lang="en">PriceOfMariettaCabernetSauvignonBox_Winery</rdfs:label>
+        <MU:hasMeasurementUnit rdf:resource="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#Liter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winery-bolla#OWLNamedIndividual_e6f7f7f9_83b9_4367_a097_da8a3f981781 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winery-bolla#OWLNamedIndividual_e6f7f7f9_83b9_4367_a097_da8a3f981781">
+        <winecoredistributor:amount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</winecoredistributor:amount>
+        <winecoredistributor:contains rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#SantaCruzMountainVineyardCabernetSauvignon"/>
+        <winecoredistributor:hasPrice rdf:resource="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winery-bolla#OWLNamedIndividual_f8db3e51_8f80_48d7_b48e_b068d177e2ed"/>
+        <rdfs:label xml:lang="en">BoxOfSantaCruzMountainVineyardCabernetSauvignon</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winery-bolla#OWLNamedIndividual_f8db3e51_8f80_48d7_b48e_b068d177e2ed -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winery-bolla#OWLNamedIndividual_f8db3e51_8f80_48d7_b48e_b068d177e2ed">
+        <winecoredistributor:price rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.6</winecoredistributor:price>
+        <rdfs:label xml:lang="en">PriceOfSantaCruzMountainVineyardCabernetSauvignonBox_Winery</rdfs:label>
+        <MU:hasMeasurementUnit rdf:resource="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#Liter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Red -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#Red"/>
+    
+
+
+    <!-- http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#CabernetSauvignonGrape -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#CabernetSauvignonGrape"/>
+    
+
+
+    <!-- http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Delicate -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Delicate"/>
+    
+
+
+    <!-- http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Dry -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Dry"/>
+    
+
+
+    <!-- http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Forman -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Forman"/>
+    
+
+
+    <!-- http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#FormanCabernetSauvignon -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#FormanCabernetSauvignon"/>
+    
+
+
+    <!-- http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Full -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Full"/>
+    
+
+
+    <!-- http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Light -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Light"/>
+    
+
+
+    <!-- http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Marietta -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Marietta"/>
+    
+
+
+    <!-- http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#MariettaCabernetSauvignon -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#MariettaCabernetSauvignon"/>
+    
+
+
+    <!-- http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Medium -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Medium"/>
+    
+
+
+    <!-- http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Moderate -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Moderate"/>
+    
+
+
+    <!-- http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#NapaRegion -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#NapaRegion"/>
+    
+
+
+    <!-- http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#OffDry -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#OffDry"/>
+    
+
+
+    <!-- http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#PageMillWineryCabernetSauvignon -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#PageMillWineryCabernetSauvignon"/>
+    
+
+
+    <!-- http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Red -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Red"/>
+    
+
+
+    <!-- http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Rose -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Rose"/>
+    
+
+
+    <!-- http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#SantaCruzMountainVineyardCabernetSauvignon -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#SantaCruzMountainVineyardCabernetSauvignon"/>
+    
+
+
+    <!-- http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#SantaCruzMountainsRegion -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#SantaCruzMountainsRegion"/>
+    
+
+
+    <!-- http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#SonomaRegion -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#SonomaRegion"/>
+    
+
+
+    <!-- http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Strong -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Strong"/>
+    
+
+
+    <!-- http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Sweet -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Sweet"/>
+    
+
+
+    <!-- http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#White -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#White"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

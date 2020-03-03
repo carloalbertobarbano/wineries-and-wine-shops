@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Wineries</title>
+        <link rel="stylesheet" href="res/bootstrap.min.css">
+        <link rel="stylesheet" href="app.css">
+    </head>
+
+    <body ng-app="WineApp">
+        <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="b2b.html">B2B</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="b2c.html">B2C</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="wine-shops.html">Enoteche</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="wineries.html">Aziene Vinicole</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="wines.html">Vini</a>
+              </li>
+            </ul>
+          </nav>
+
+        <div ng-controller="B2CController">
+            <div class="jumbotron d-flex text-center">
+                <div class="row align-self-center text-center mx-auto">
+                    <h1>B2C - Listino prezzi per la vendita al dettaglio</h1>
+                </div>
+            </div>
+
+            <div class="container">            
+                <table class="table" id="table-data">
+                    <thead>
+                        <th scope="col">#</th>
+                        <th scope="col">Wine</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Sold by</th>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="item in items">
+                            <th scope="row">{{item.id}}</th>
+                            <td><a href="wine.html#{{item.wineIRI}}">{{item.wine}}</a></td>
+                            <td>{{item.price}}</td>
+                            <td><a href="item.html#{{item.sellerIRI}}">{{item.soldBy}}</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <span class="text-muted">
+                    All Rights Reserved © 2019-2020 - DipInfo
+                </span>
+            </div>
+        </footer>
+        <script src="res/angular.min.js"></script>
+        <script src="res/jquery.min.js"></script>
+        <script src="res/bootstrap.min.js"></script>    
+        <script src="app.js"></script>
+        <script>
+            function loadItem(iri) {
+                window.location.assign(`item.html#${iri}`);
+                window.location.reload();
+            }
+        </script>
+    </body>
+</html>

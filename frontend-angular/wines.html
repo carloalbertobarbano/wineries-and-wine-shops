@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Wines</title>
+        <link rel="stylesheet" href="res/bootstrap.min.css">
+        <link rel="stylesheet" href="app.css">
+    </head>
+
+    <body ng-app="WineApp">
+        <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="b2b.html">B2B</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="b2c.html">B2C</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="wine-shops.html">Enoteche</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="wineries.html">Aziene Vinicole</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="wines.html">Vini</a>
+              </li>
+            </ul>
+          </nav>
+
+        <div class="jumbotron d-flex text-center">
+            <div class="row align-self-center text-center mx-auto">
+                <h1>Wines</h1>
+            </div>
+        </div>
+
+        <div class="container">
+            <input id="search" class="form-control" type="text" placeholder="Search" aria-label="Search">
+
+            <div ng-controller="WinesController">
+                <div class="card-columns">
+                    <div ng-repeat="wine in wines">
+                        <div class="card" >
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="wine.html#{{wine.iri}}">{{wine.name}}</a></h5>
+                                <ul>
+                                    <li>Color: {{wine.color}}</li>
+                                    <li>Body: {{wine.body}}</li>
+                                    <li>Flavor: {{wine.flavor}}</li>
+                                    <li>Sugar: {{wine.sugar}}</li>
+                                    <li>Maker: <a href="item.html#{{wine.makerIri}}">{{wine.maker}}</a></li>
+                                    <li>Location: {{wine.location}}</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <span class="text-muted">
+                    All Rights Reserved © 2019-2020 - DipInfo
+                </span>
+            </div>
+        </footer>
+        <script src="res/angular.min.js"></script>
+        <script src="res/jquery.min.js"></script>
+        <script src="res/bootstrap.min.js"></script>        
+        <script src="app.js"></script>
+
+
+        <script>
+            $('#search').change(function() {
+                $('.card').show();
+                var filter = $(this).val();
+                $('.container').find(".card-title:not(:contains(" + filter + "))").parent().hide();
+            });
+        </script>
+    </body>
+</html>

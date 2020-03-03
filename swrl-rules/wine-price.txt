@@ -1,0 +1,15 @@
+Item(?collection) ^ amount(?collection, ?am) ^ swrlb:greaterThan(?am, 1) ^ 
+
+totalPrice(?collection, ?collectionPrice) ^
+
+swrlb:divide(?unitaryPrice, ?collectionPrice, ?am) ^
+
+Wine(?wine) ^ contains(?collection, ?wine) ^
+
+swrlb:multiply(?winePriceVal, 0.75, ?unitaryPrice) ^
+
+swrlx:makeOWLThing(?winePriceObj) ^ Price(?winePriceObj) ^ hasPrice(?winePriceObj, ?winePriceVal) ^ hasMeasurementUnit(?winePriceObj, BottleUnit)
+
+->
+
+hasPrice(?wine, ?winePriceObj)

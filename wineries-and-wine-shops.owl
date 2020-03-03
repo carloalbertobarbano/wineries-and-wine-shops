@@ -1,0 +1,624 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/carlo/ontologies/2020/2/wineries-and-wine-shops"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/carlo/ontologies/2020/2/wineries-and-wine-shops">
+    <Prefix name="" IRI="http://www.semanticweb.org/carlo/ontologies/2020/2/wineries-and-wine-shops"/>
+    <Prefix name="cp" IRI="http://www.ontologydesignpatterns.org/cp/owl#"/>
+    <Prefix name="mu" IRI="https://w3id.org/italia/onto/MU"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="wws" IRI="http://www.semanticweb.org/carlo/ontologies/2020/2/wineries-and-wine-shops#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="winecoredistributor" IRI="http://www.semanticweb.org/francescoiodice/ontologies/2020/1/winecoredistributor#"/>
+    <Import>http://www.semanticweb.org/carlo/ontologies/2020/2/wineries-unified</Import>
+    <Declaration>
+        <Class IRI="#WineShop"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#cheaperThan"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#sellsWineOfColor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#sellsWineOfFlavor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#sellsWineOfSugar"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#totalPrice"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rossorubino"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RossorubinoAmaroneRheticoDOCGPrice"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RossorubinoBancroftChardonnayPrice"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RossorubinoBottleOfAmaroneRheticoDOCG"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RossorubinoBottleOfBancroftChardonnay"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RossorubinoBottleOfChiantiClassico"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RossorubinoBottleOfPinotBiancoSOLO"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RossorubinoBottleOfSantaCruzMountainVineyardCabernetSauvignon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RossorubinoChiantiClassicoPrice"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RossorubinoPinotBiancoSOLOPrice"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RossorubinoSantaCruzMountainVineyardCabernetSauvignonPrice"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tuberga"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TubergaAmaroneRheticoDOCGPrice"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TubergaBaroloCannubiRiservaPrice"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TubergaBottleOfAmaroneRheticoDOCG"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TubergaBottleOfBaroloCannubiRiserva"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TubergaBottleOfChiantiClassico"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TubergaBottleOfFormanChardonnay"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TubergaBottleOfTaylorPort"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TubergaChiantiClassicoPrice"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TubergaFormanChardonnayPrice"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TubergaTaylorPortPrice"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Turin"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#WineShop"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="winecoredistributor:Distributor"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty abbreviatedIRI="winecoredistributor:sell"/>
+                <Class abbreviatedIRI="winecoredistributor:Bottle"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#WineShop"/>
+        <Class abbreviatedIRI="winecoredistributor:Distributor"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#WineShop"/>
+        <NamedIndividual IRI="#Rossorubino"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="winecoredistributor:Price"/>
+        <NamedIndividual IRI="#RossorubinoAmaroneRheticoDOCGPrice"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="winecoredistributor:Price"/>
+        <NamedIndividual IRI="#RossorubinoBancroftChardonnayPrice"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="winecoredistributor:Bottle"/>
+        <NamedIndividual IRI="#RossorubinoBottleOfAmaroneRheticoDOCG"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="winecoredistributor:Bottle"/>
+        <NamedIndividual IRI="#RossorubinoBottleOfBancroftChardonnay"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="winecoredistributor:Bottle"/>
+        <NamedIndividual IRI="#RossorubinoBottleOfChiantiClassico"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="winecoredistributor:Bottle"/>
+        <NamedIndividual IRI="#RossorubinoBottleOfPinotBiancoSOLO"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="winecoredistributor:Bottle"/>
+        <NamedIndividual IRI="#RossorubinoBottleOfSantaCruzMountainVineyardCabernetSauvignon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="winecoredistributor:Price"/>
+        <NamedIndividual IRI="#RossorubinoChiantiClassicoPrice"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="winecoredistributor:Price"/>
+        <NamedIndividual IRI="#RossorubinoPinotBiancoSOLOPrice"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="winecoredistributor:Price"/>
+        <NamedIndividual IRI="#RossorubinoSantaCruzMountainVineyardCabernetSauvignonPrice"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WineShop"/>
+        <NamedIndividual IRI="#Tuberga"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="winecoredistributor:Price"/>
+        <NamedIndividual IRI="#TubergaAmaroneRheticoDOCGPrice"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="winecoredistributor:Price"/>
+        <NamedIndividual IRI="#TubergaBaroloCannubiRiservaPrice"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="winecoredistributor:Bottle"/>
+        <NamedIndividual IRI="#TubergaBottleOfAmaroneRheticoDOCG"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="winecoredistributor:Bottle"/>
+        <NamedIndividual IRI="#TubergaBottleOfBaroloCannubiRiserva"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="winecoredistributor:Bottle"/>
+        <NamedIndividual IRI="#TubergaBottleOfChiantiClassico"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="winecoredistributor:Bottle"/>
+        <NamedIndividual IRI="#TubergaBottleOfFormanChardonnay"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="winecoredistributor:Bottle"/>
+        <NamedIndividual IRI="#TubergaBottleOfTaylorPort"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="winecoredistributor:Price"/>
+        <NamedIndividual IRI="#TubergaChiantiClassicoPrice"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="winecoredistributor:Price"/>
+        <NamedIndividual IRI="#TubergaFormanChardonnayPrice"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="winecoredistributor:Price"/>
+        <NamedIndividual IRI="#TubergaTaylorPortPrice"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Region"/>
+        <NamedIndividual IRI="#Turin"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="winecoredistributor:sell"/>
+        <NamedIndividual IRI="#Rossorubino"/>
+        <NamedIndividual IRI="#RossorubinoBottleOfAmaroneRheticoDOCG"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="winecoredistributor:sell"/>
+        <NamedIndividual IRI="#Rossorubino"/>
+        <NamedIndividual IRI="#RossorubinoBottleOfBancroftChardonnay"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="winecoredistributor:sell"/>
+        <NamedIndividual IRI="#Rossorubino"/>
+        <NamedIndividual IRI="#RossorubinoBottleOfChiantiClassico"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="winecoredistributor:sell"/>
+        <NamedIndividual IRI="#Rossorubino"/>
+        <NamedIndividual IRI="#RossorubinoBottleOfPinotBiancoSOLO"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="winecoredistributor:sell"/>
+        <NamedIndividual IRI="#Rossorubino"/>
+        <NamedIndividual IRI="#RossorubinoBottleOfSantaCruzMountainVineyardCabernetSauvignon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#locatedIn"/>
+        <NamedIndividual IRI="#Rossorubino"/>
+        <NamedIndividual IRI="#Turin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://w3id.org/italia/onto/MU/hasMeasurementUnit"/>
+        <NamedIndividual IRI="#RossorubinoAmaroneRheticoDOCGPrice"/>
+        <NamedIndividual abbreviatedIRI="winecoredistributor:BottleUnit"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://w3id.org/italia/onto/MU/hasMeasurementUnit"/>
+        <NamedIndividual IRI="#RossorubinoBancroftChardonnayPrice"/>
+        <NamedIndividual abbreviatedIRI="winecoredistributor:BottleUnit"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="winecoredistributor:contains"/>
+        <NamedIndividual IRI="#RossorubinoBottleOfAmaroneRheticoDOCG"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/carlo/ontologies/2020/2/winery-bolla#AmaroneRheticoDOCG"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="winecoredistributor:hasPrice"/>
+        <NamedIndividual IRI="#RossorubinoBottleOfAmaroneRheticoDOCG"/>
+        <NamedIndividual IRI="#RossorubinoAmaroneRheticoDOCGPrice"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="winecoredistributor:contains"/>
+        <NamedIndividual IRI="#RossorubinoBottleOfBancroftChardonnay"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#BancroftChardonnay"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="winecoredistributor:hasPrice"/>
+        <NamedIndividual IRI="#RossorubinoBottleOfBancroftChardonnay"/>
+        <NamedIndividual IRI="#RossorubinoBancroftChardonnayPrice"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="winecoredistributor:contains"/>
+        <NamedIndividual IRI="#RossorubinoBottleOfChiantiClassico"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#ChiantiClassico"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="winecoredistributor:hasPrice"/>
+        <NamedIndividual IRI="#RossorubinoBottleOfChiantiClassico"/>
+        <NamedIndividual IRI="#RossorubinoChiantiClassicoPrice"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="winecoredistributor:contains"/>
+        <NamedIndividual IRI="#RossorubinoBottleOfPinotBiancoSOLO"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/carlo/ontologies/2020/2/winery-bastianich#PinotBiancoSOLO"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="winecoredistributor:hasPrice"/>
+        <NamedIndividual IRI="#RossorubinoBottleOfPinotBiancoSOLO"/>
+        <NamedIndividual IRI="#RossorubinoPinotBiancoSOLOPrice"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="winecoredistributor:contains"/>
+        <NamedIndividual IRI="#RossorubinoBottleOfSantaCruzMountainVineyardCabernetSauvignon"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#SantaCruzMountainVineyardCabernetSauvignon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="winecoredistributor:hasPrice"/>
+        <NamedIndividual IRI="#RossorubinoBottleOfSantaCruzMountainVineyardCabernetSauvignon"/>
+        <NamedIndividual IRI="#RossorubinoSantaCruzMountainVineyardCabernetSauvignonPrice"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://w3id.org/italia/onto/MU/hasMeasurementUnit"/>
+        <NamedIndividual IRI="#RossorubinoChiantiClassicoPrice"/>
+        <NamedIndividual abbreviatedIRI="winecoredistributor:BottleUnit"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://w3id.org/italia/onto/MU/hasMeasurementUnit"/>
+        <NamedIndividual IRI="#RossorubinoPinotBiancoSOLOPrice"/>
+        <NamedIndividual abbreviatedIRI="winecoredistributor:BottleUnit"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://w3id.org/italia/onto/MU/hasMeasurementUnit"/>
+        <NamedIndividual IRI="#RossorubinoSantaCruzMountainVineyardCabernetSauvignonPrice"/>
+        <NamedIndividual abbreviatedIRI="winecoredistributor:BottleUnit"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="winecoredistributor:sell"/>
+        <NamedIndividual IRI="#Tuberga"/>
+        <NamedIndividual IRI="#TubergaBottleOfAmaroneRheticoDOCG"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="winecoredistributor:sell"/>
+        <NamedIndividual IRI="#Tuberga"/>
+        <NamedIndividual IRI="#TubergaBottleOfBaroloCannubiRiserva"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="winecoredistributor:sell"/>
+        <NamedIndividual IRI="#Tuberga"/>
+        <NamedIndividual IRI="#TubergaBottleOfChiantiClassico"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="winecoredistributor:sell"/>
+        <NamedIndividual IRI="#Tuberga"/>
+        <NamedIndividual IRI="#TubergaBottleOfFormanChardonnay"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="winecoredistributor:sell"/>
+        <NamedIndividual IRI="#Tuberga"/>
+        <NamedIndividual IRI="#TubergaBottleOfTaylorPort"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#locatedIn"/>
+        <NamedIndividual IRI="#Tuberga"/>
+        <NamedIndividual IRI="#Turin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://w3id.org/italia/onto/MU/hasMeasurementUnit"/>
+        <NamedIndividual IRI="#TubergaAmaroneRheticoDOCGPrice"/>
+        <NamedIndividual abbreviatedIRI="winecoredistributor:BottleUnit"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://w3id.org/italia/onto/MU/hasMeasurementUnit"/>
+        <NamedIndividual IRI="#TubergaBaroloCannubiRiservaPrice"/>
+        <NamedIndividual abbreviatedIRI="winecoredistributor:BottleUnit"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="winecoredistributor:contains"/>
+        <NamedIndividual IRI="#TubergaBottleOfAmaroneRheticoDOCG"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/carlo/ontologies/2020/2/winery-bolla#AmaroneRheticoDOCG"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="winecoredistributor:hasPrice"/>
+        <NamedIndividual IRI="#TubergaBottleOfAmaroneRheticoDOCG"/>
+        <NamedIndividual IRI="#TubergaAmaroneRheticoDOCGPrice"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="winecoredistributor:contains"/>
+        <NamedIndividual IRI="#TubergaBottleOfBaroloCannubiRiserva"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/carlo/ontologies/2020/2/winery-astemia#BaroloCannubiRiserva"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="winecoredistributor:hasPrice"/>
+        <NamedIndividual IRI="#TubergaBottleOfBaroloCannubiRiserva"/>
+        <NamedIndividual IRI="#TubergaBaroloCannubiRiservaPrice"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="winecoredistributor:contains"/>
+        <NamedIndividual IRI="#TubergaBottleOfChiantiClassico"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#ChiantiClassico"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="winecoredistributor:hasPrice"/>
+        <NamedIndividual IRI="#TubergaBottleOfChiantiClassico"/>
+        <NamedIndividual IRI="#TubergaChiantiClassicoPrice"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="winecoredistributor:contains"/>
+        <NamedIndividual IRI="#TubergaBottleOfFormanChardonnay"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#FormanChardonnay"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="winecoredistributor:hasPrice"/>
+        <NamedIndividual IRI="#TubergaBottleOfFormanChardonnay"/>
+        <NamedIndividual IRI="#TubergaFormanChardonnayPrice"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="winecoredistributor:contains"/>
+        <NamedIndividual IRI="#TubergaBottleOfTaylorPort"/>
+        <NamedIndividual IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#TaylorPort"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="winecoredistributor:hasPrice"/>
+        <NamedIndividual IRI="#TubergaBottleOfTaylorPort"/>
+        <NamedIndividual IRI="#TubergaTaylorPortPrice"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://w3id.org/italia/onto/MU/hasMeasurementUnit"/>
+        <NamedIndividual IRI="#TubergaChiantiClassicoPrice"/>
+        <NamedIndividual abbreviatedIRI="winecoredistributor:BottleUnit"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://w3id.org/italia/onto/MU/hasMeasurementUnit"/>
+        <NamedIndividual IRI="#TubergaFormanChardonnayPrice"/>
+        <NamedIndividual abbreviatedIRI="winecoredistributor:BottleUnit"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://w3id.org/italia/onto/MU/hasMeasurementUnit"/>
+        <NamedIndividual IRI="#TubergaTaylorPortPrice"/>
+        <NamedIndividual abbreviatedIRI="winecoredistributor:BottleUnit"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#locatedIn"/>
+        <NamedIndividual IRI="#Turin"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/carlo/ontologies/2020/2/winery-astemia#Piedmont"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="winecoredistributor:price"/>
+        <NamedIndividual IRI="#RossorubinoAmaroneRheticoDOCGPrice"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">18.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="winecoredistributor:price"/>
+        <NamedIndividual IRI="#RossorubinoBancroftChardonnayPrice"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">25.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="winecoredistributor:amount"/>
+        <NamedIndividual IRI="#RossorubinoBottleOfAmaroneRheticoDOCG"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="winecoredistributor:amount"/>
+        <NamedIndividual IRI="#RossorubinoBottleOfBancroftChardonnay"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="winecoredistributor:amount"/>
+        <NamedIndividual IRI="#RossorubinoBottleOfChiantiClassico"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="winecoredistributor:amount"/>
+        <NamedIndividual IRI="#RossorubinoBottleOfPinotBiancoSOLO"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="winecoredistributor:amount"/>
+        <NamedIndividual IRI="#RossorubinoBottleOfSantaCruzMountainVineyardCabernetSauvignon"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="winecoredistributor:price"/>
+        <NamedIndividual IRI="#RossorubinoChiantiClassicoPrice"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">15.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="winecoredistributor:price"/>
+        <NamedIndividual IRI="#RossorubinoPinotBiancoSOLOPrice"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">55.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="winecoredistributor:price"/>
+        <NamedIndividual IRI="#RossorubinoSantaCruzMountainVineyardCabernetSauvignonPrice"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">29.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="winecoredistributor:price"/>
+        <NamedIndividual IRI="#TubergaAmaroneRheticoDOCGPrice"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">14.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="winecoredistributor:price"/>
+        <NamedIndividual IRI="#TubergaBaroloCannubiRiservaPrice"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">23.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="winecoredistributor:price"/>
+        <NamedIndividual IRI="#TubergaChiantiClassicoPrice"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">10.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="winecoredistributor:price"/>
+        <NamedIndividual IRI="#TubergaFormanChardonnayPrice"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">30.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="winecoredistributor:price"/>
+        <NamedIndividual IRI="#TubergaTaylorPortPrice"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">25.0</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#cheaperThan"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/bag.owl#Item"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#sellsWineOfColor"/>
+        <Class abbreviatedIRI="winecoredistributor:Distributor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#sellsWineOfFlavor"/>
+        <Class abbreviatedIRI="winecoredistributor:Distributor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#sellsWineOfSugar"/>
+        <Class abbreviatedIRI="winecoredistributor:Distributor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#cheaperThan"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/bag.owl#Item"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#sellsWineOfColor"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineColor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#sellsWineOfFlavor"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineFlavor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#sellsWineOfSugar"/>
+        <Class IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#WineSugar"/>
+    </ObjectPropertyRange>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty abbreviatedIRI="winecoredistributor:sell"/>
+            <ObjectProperty abbreviatedIRI="winecoredistributor:contains"/>
+            <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasColor"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="#sellsWineOfColor"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty abbreviatedIRI="winecoredistributor:sell"/>
+            <ObjectProperty abbreviatedIRI="winecoredistributor:contains"/>
+            <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasFlavor"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="#sellsWineOfFlavor"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty abbreviatedIRI="winecoredistributor:sell"/>
+            <ObjectProperty abbreviatedIRI="winecoredistributor:contains"/>
+            <ObjectProperty IRI="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#hasSugar"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="#sellsWineOfSugar"/>
+    </SubObjectPropertyOf>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#Rossorubino</IRI>
+        <Literal xml:lang="it">Uno spazio per esplorare l&apos;universo del vino, dalla degustazione alla convivialità, dall&apos;abbinamento dei gusti all&apos;incontro culturale.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Rossorubino</IRI>
+        <Literal xml:lang="en">A wine shop</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Rossorubino</IRI>
+        <Literal xml:lang="en">Rossorubino</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#Tuberga</IRI>
+        <Literal xml:lang="it">Enoteca Bistrot Torino</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Tuberga</IRI>
+        <Literal xml:lang="en">A wine shop</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Tuberga</IRI>
+        <Literal xml:lang="en">Tuberga</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#cheaperThan</IRI>
+        <Literal xml:lang="en">Says which items are more expensive than this one</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cheaperThan</IRI>
+        <Literal xml:lang="en">cheaperThan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#sellsWineOfColor</IRI>
+        <Literal xml:lang="en">Useful derived property to see if a certain wine shop sells red, rose or white wines</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#sellsWineOfColor</IRI>
+        <Literal xml:lang="en">sellsWineOfColor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#totalPrice</IRI>
+        <Literal xml:lang="en">Total price of a collection.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#totalPrice</IRI>
+        <Literal xml:lang="en">totalPrice</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
