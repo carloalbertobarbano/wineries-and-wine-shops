@@ -227,6 +227,7 @@ var WineDetailsController = function($scope) {
         Object.keys(obj).map(key => {
             obj[key] = iriToName(obj[key]);
         })
+        obj.makerIri = btoa(item.maker.value);
        
         $scope.wine = obj;
         $scope.$apply();
