@@ -14,18 +14,20 @@ function sparqlQuery(query, callback) {
 }
 
 function wikidataQuery(query, callback) {
-    let url = "https://query.wikidata.org/sparql";
-    let queryUrl = encodeURI(`${url}?origin=*&query=${query}&format=json`);
+    //let url = "https://query.wikidata.org/sparql";
+    //let queryUrl = encodeURI(`${url}?origin=*&query=${query}&format=json`);
+
+    let queryUrl = `http://localhost:5000/query?query=${query}`
 
     $.ajax({
-        accepts: 'application/sparql-results+json',
-        dataType: 'jsonp',
-        jsonp: "callback",
+        accepts: 'application/json',
         url: queryUrl,
         method: 'GET',
         success: callback,
         error: function(err) {
             console.log("Errore: " + err);
+            console.log(err)
+            throw err;
         }
     });
 }
@@ -200,6 +202,12 @@ var WineDetailsController = function($scope) {
     $scope.individualName = individualName;
     $scope.IRI = iri;
 
+    $scope.wikidata = {
+        'img': 'res/assets/generic_wine.jpg',
+        'name': individualName
+    }
+    //$scope.$apply();
+
     let query = "SELECT DISTINCT ?color ?body ?flavor ?sugar ?maker ?location " +
                 "WHERE { " +
                 `${namespace}:${individualName} rdf:type wine:Wine . ` +
@@ -213,7 +221,7 @@ var WineDetailsController = function($scope) {
     console.log(query);
     
     sparqlQuery(query, data => {
-        console.log(data);
+        //console.log(data);
         item = data.results.bindings[0];
         obj = {
             'name': individualName,
@@ -244,11 +252,14 @@ var WineDetailsController = function($scope) {
                        "}";
 
     sparqlQuery(subtypeQuery, data => {
+        console.log('subtypes:')
+        console.log(data)
+
         let subtype = data.results.bindings[1].type.value;
         let subtypeName = iriToName(subtype);
         subtypeName = subtypeName.split(/(?=[A-Z])/).join(" ").toLowerCase();
-        console.log(subtypeName);
-
+        console.log('Most specific wine type found: ' + subtypeName);
+        
         let wikiQueryDescr = "SELECT ?item ?itemLabel ?itemDescription " +
                             "WHERE " +
                             "{ " +
@@ -260,18 +271,35 @@ var WineDetailsController = function($scope) {
                             "   SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\" } "+
                             " } ";
         console.log(wikiQueryDescr);
-
+        
+        console.log("Query wikidata for item")
         wikidataQuery(wikiQueryDescr, data => {
             $scope.description = data.results.bindings[0].itemDescription.value;
             item = data.results.bindings[0].item.value;
+            item = 'wd:'+item.substring(item.lastIndexOf('/')+1);
+            
+            itemLabel = data.results.bindings[0].itemLabel.value;
+            itemDescription = data.results.bindings[0].itemDescription.value;
+            $scope.wikidata = {
+                'description': itemDescription,
+                'name': itemLabel
+            };
+            $scope.$apply();
 
+            console.log(itemDescription)
+            console.log(`Corresponding wikidata item for ${subtype}: ${item}`)
             let imgQuery = "SELECT ?img " +
                             "WHERE " +
                             "{ " +
                             `   ${item} wdt:P18 ?img. ` +
                             "}";
+            
+            console.log("Query wikidata for image")
             wikidataQuery(imgQuery, data => {
-                $scope.description = data.results.bindings[0].img.value;
+                console.log('Img: ' + data.results.bindings[0].img.value);
+                if (data.results.bindings[0].img.value != null)
+                    $scope.wikidata.img = data.results.bindings[0].img.value;
+                //$scope.wikidata.description = data.results.bindings[0].img.value;
                 $scope.$apply();
             })
         }); 
