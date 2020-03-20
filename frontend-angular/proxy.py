@@ -10,9 +10,12 @@ def proxy_query():
 
     print(query)
 
-    url = f"https://query.wikidata.org/sparql?origin=*&query={query}&format=json"
-    req = requests.get(url)
+    url = f"https://query.wikidata.org/sparql?origin=*&query={requests.utils.quote(query)}&format=json"
+    print(url)
+    headers = { 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'}
+    req = requests.get(url, headers=headers)
     print('Results from wikidata')
+    print(req)
     print(req.json())
     return req.json()
     #return query
