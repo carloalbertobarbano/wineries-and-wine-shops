@@ -20,6 +20,10 @@ def proxy_query():
     return req.json()
     #return query
 
+@app.route('/', methods=['GET'])
+def index():
+    return app.send_static_file('index.html')
+    
 @app.route('/<path:path>', methods=['GET'])
 def static_file(path):
     return app.send_static_file(path)
